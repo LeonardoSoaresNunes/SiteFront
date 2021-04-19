@@ -36,6 +36,12 @@ header li:last-child{margin-right: 0;}
 .pousada p {max-width: 800px; margin-bottom: 35px; text-align: center;}
 .pousada hr{ width: 200px; height: 3px; background-color: cyan;margin-bottom: 80px;border:none;}
 
-
+.pousada .grid { width: 100% ;display: flex; flex-wrap: wrap;}
+.pousada .grid li{height: 380;padding: 30px; background-clip: content-box; background-size: cover; background:center;}
+.pousada .grid li.small {flex-basis: 40%;}
+.pousada .grid li.large {flex-basis: 80%;}
+@media(max-width:700px){
+    .pousada .grid li.small , .pousada .grid li.large {flex-basis: 100%;}
+}
 
 
